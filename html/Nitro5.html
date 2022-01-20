@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitro 5</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/jquery-3.5.1.js" > </script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: rgb(3, 46, 46);
+            z-index: 1;
+            list-style: none;
+            width: 100%;
+        }
+        .dropdown-content>a{
+            text-decoration: none;
+            color:rgb(10, 128, 128);
+           
+        }
+        .dropdown-content>a:hover{
+            color: white; 
+        }
+        
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown-item{
+            margin-left: 20%; 
+        }
+        .panel-heading>a{
+            text-decoration: none;
+            color: white;
+        }
+        .panel-heading>a:hover{
+            text-decoration: none;
+            color: greenyellow;
+        }
+        #wrap-footer h5, p{
+            color: white;
+        }
+        #wrap-section h1, p{
+            text-align: center;
+        }
+        #wrap-section h1{
+            
+            color: greenyellow;
+        }
+        #wrap-section p{
+            color: red;
+        }
+        #wrap-section img{
+            max-width: 90%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 5%;
+        }
+        #wrap-section h2, th{
+            color: greenyellow;
+            margin-left: 10%;
+        }
+        #wrap-section td{
+            color: red;
+        }
+      
+    </style>
+
+    <script>
+        function get(){
+            document.getElementById("idformTim").value = document.getElementById("txtTim").value;
+        }
+    </script>
+
+</head>
+<body>
+    <div class="wrap-body" style="background-image: url(../hinh/backGround/GearVN_giản\ dị_19.jpg);">
+        <header id="wrap-header">
+            <div class="container" style="background-color: black;">
+                <div class="row"  >
+                    <div class="container text-center" >
+                        <a href="../html/TrangChu.html">
+                            <h1 style="color: red;">SAMURAI</h1> 
+                        </a>     
+                    </div>
+                </div>
+                <div class="row">
+                    <div  class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 logo" >
+                            <a href="../html/TrangChu.html" style="text-decoration: none;">
+                                <img src="../hinh/logo/pngtree-blue-samurai-esports-logo-gaming-mascot-logo-png-image_1003048.jpg" style="max-width: 70%; max-height: 70%;">
+                            </a>    
+                        </div>
+                        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7"  style="margin-top: 2%;" >
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 ">
+                                <input type="text" placeholder="tìm kiếm sản phẩm" class="form-control" id="txtTim" style=" max-width: 100%;" />
+                            </div>
+                            <input type="button" class="btn btn-danger"  onclick =  "get()"  value="Tìm" data-toggle="modal" data-target="#TimModal" />
+                            
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"  >
+                        
+                            <input type="button" class="btn btn-danger"  onclick =  ""  value="Đăng nhập"  data-toggle="modal" data-target="#DNModal" style="margin-top: 8% ;"/>
+                            <a href="../html/formDangKy.html"><input type="button" class="btn btn-primary"  onclick =  ""  value="Đăng ký"  style="margin-top: 8%;"/></a>
+                            <!-- <input type="button" class="btn btn-primary"  onclick =  ""  value="GIỎ HÀNG"  style="margin-top: 8%; ;margin-left: 5%;"/> -->
+                        </div>
+                    </div>
+                    
+                    
+                   
+                    
+                </div>
+                <div class="row"> 
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logo">
+                        <nav class="navbar navbar-inverse">
+                            <div class="container-fluid">
+                              <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>                        
+                                </button>
+                                <a class="navbar-brand" href="#"> 
+                                </a>
+                              
+                              <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#" style="color: yellow;">NITRO 5</a></li>
+                                 
+                                    <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown">SẢN PHẨM</a>
+                                            <div class="dropdown-content">
+                                                <a class="dropdown-item" href="laptop.html" >LAP TOP</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">PC</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">BÀN PHÍM</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">CHUỘT</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">TAI NGHE</a>
+                                            </div>
+                                    </li>
+                                    <li><a href="#">TỔNG HỢP KHUYẾN MÃI</a></li>
+                                    <li><a href="#">CHÍNH SÁCH BẢO HÀNH</a></li>
+                                    <li><a href="#">CHÍNH SÁCH VẬN CHUYỂN</a></li>
+                                    <li><a href="#">GIỚI THIỆU WEB SITE </a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                  <li><a href="#">SITE MAP</a></li>
+                                  
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                    </div>
+                </div>   
+            </div>
+        </header>
+        <section id="wrap-section" > 
+            <div class="container" style="background-color: black;border-top: 1px solid springgreen;padding-top: 1.5%;">
+                <div class="row">
+                    <h1 style="margin-bottom: 5%;">Laptop Acer Nitro 5 2019 AN515-54-51X1</h1>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                        <img src="../hinh/Nitro5/nitro-5-2019-1.jpg" >
+                        <a href=""><input type="button" class="btn btn-primary"  onclick =  ""  value="ĐẶT MUA"  style="margin-left: 45%;"/></a>
+                    </div>
+                   
+                        
+                    
+                    <h2>Thông số </h2>
+                    <div style="max-width: 90%;margin-left: 5%;">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>CPU</th>
+                                <td>Intel Core i5 9300H</td>
+                            </tr>
+                            <tr>
+                                <th>Hệ điều hành</th>
+                                <td>Windows 10 SL 64 Bit</td>
+                            </tr>
+                            <tr>
+                                <th>RAM</th>
+                                <td>DDR4 8GB (1 x 8GB) 2666MHz; 2 slots, up to 32GB</td>
+                            </tr>
+                            <tr>
+                                <th>RAM</th>
+                                <td>DDR4 8GB (1 x 8GB) 2666MHz; 2 slots, up to 32GB</td>
+                            </tr>
+                            <tr>
+                                <th>GPU	</th>
+                                <td>Geforce GTX 1050 3GB</td>
+                            </tr>
+                            <tr>
+                                <th>Màn hình</th>
+                                <td>15.6" FHD (1920×1080), IPS</td>
+                            </tr>
+                            <tr>
+                                <th>Ổ cứng SSD</th>
+                                <td>256GB SSD NVMe M.2 PCIe Gen 3×2</td>
+                            </tr>
+                            <tr>
+                                <th>Ổ cứng HDD	</th>
+                                <td>1 slot HDD 2.5'</td>
+                            </tr>
+    
+                            <tr>
+                                <th>Ổ đĩa quang		</th>
+                                <td>No ODD</td>
+                            </tr>
+                            <tr>
+                                <th>Lan		</th>
+                                <td>Gigabit Ethernet</td>
+                            </tr>
+                            <tr>
+                                <th>Wireless Lan</th>
+                                <td>802.11ac 2×2 Wi-Fi</td>
+                            </tr>
+                            <tr>
+                                <th>Các cổng kết nối</th>
+                                <td>2x USB 2.0; 1x USB 3.0; 1x USB 3.1 Type C; 1x HDMI</td>
+                            </tr>
+                            <tr>
+                                <th>Bàn phím</th>
+                                <td>Backlight Keyboard</td>
+                            </tr>
+                            <tr>
+                                <th>Pin	</th>
+                                <td>4 Cell , 48 Whr</td>
+                            </tr>
+                            <tr>
+                                <th>Trọng lượng	</th>
+                                <td>2.45 kg</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <h1>NITRO 5 2019 HOÀN TOÀN MỚI <br>VŨ KHÍ TẢN NHIỆT</h1>
+                    <p>Trải nghiệm hoàn toàn mới mẻ dành cho game thủ với <B>Nitro 5 2019 AN515-54-51X1</B> đó là sự hoàn hảo đến từ Vũ Khí Tản Nhiệt.</p>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <img src="../hinh/Nitro5/nitro-5-2019-3.jpg" >
+                    </div>
+                    
+                    <h1>TRẢI NGHIỆM GAME TỐT HƠN</h1>
+                    <p>Nitro 5 2019 AN515-54-51X1 có với cấu hình CPU Intel 9th và VGA NVIDIA 1050 3GB thế hệ mới nhất.<br> Khả năng nâng cấp tuyệt vời với ram lên đến 32 GB, lưu trữ lên đến 2TB HDD và 1TB SSD PCIe NVMe.</p>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <img src="../hinh/Nitro5/nitro-5-2019-2.jpg" >
+                    </div>
+
+                    <h1>THAO TÁC NHANH HƠN</h1>
+                    <p>Với phím tắt Nitro Sense được bổ sung trên Nitro 5 2019 AN515-54-51X1 cho phép Game Thủ vào phần mền kiểm soát nhiệt độ Nitro Sense chỉ bằng một nút chạm.
+                         <br>   
+                        Acer hiểu đối với Game Thủ 1 giây cũng cực kì quan trọng, nên việc bổ sung phím tắt Nitro Sense sẽ giúp trải nghiệm Gaming trở nên hoàn hảo và trực quan hơn bao giờ hết.</p>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <img src="../hinh/Nitro5/nitro-5-2019-4.jpg" >
+                    </div>
+
+                    <h1>KẾT NỐI NHANH HƠN</h1>
+                    <p>Nitro 5 2019 AN515-54-51X1 được Acer trang bị Killer™ Ethernet E2500. Killer™ Ethernet E2500 giúp mở rộng băng thông xử lý đến 1Gbps. 
+                         <br>   
+                         Gigabit Wi-Fi 5with 2×2 MU-MIMO Technology Intel 802.11ac Wave 2 với băng tần kép mới nhất có tốc độ truyền dữ liệu lên đến 1.7Gbps.</p>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <img src="../hinh/Nitro5/nitro-5-2019-5.jpg" >
+                    </div>
+
+                    <h1>GÓC RỘNG HƠN</h1>
+                    <h1>TRẢI NGHIỆM TỐT HƠN</h1>
+                    <p>Màn hình FullHD IPS với viền màn hình siêu mỏng 7.18mm cùng tỉ lệ vàng screen-to-body ratio lên đến 80%.</p>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <img src="../hinh/Nitro5/nitro-5-2019-6.jpg">
+                    </div>
+                    
+                    <h1>“ACT COOL” HƠN – NGẦU HƠN</h1>
+                   
+                    <p>Vẻ ngoài sẽ ngầu hơn rất nhiều, đậm chất Gaming hơn. Tổng thể thiết kế được phối bởi hai màu đen-đỏ chủ đạo, thể hiện rõ nét sự trầm tĩnh và thế chủ đạo trong <br> mọi cuộc chiến. Bản lề màu đỏ rực rỡ trên nền đen (Osidian Black), cụm WASD và phím điều hướng cũng được làm cực kì nổi bật.</p>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <img src="../hinh/Nitro5/nitro-5-2019-7.jpg" >
+                    </div>
+
+                    <h1>NGHE GAMING HƠN</h1>
+                    <p>Chất lượng âm thanh được xử lý bằng phần mềm Waves MaxxAudio® và Acer TrueHarmony™ đưa chất lượng âm thanh phòng thu đến với bạn. Bạn sẽ ở trong <br> không gian sống động của các cuộc đua nghẹt thở.</p>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <img src="../hinh/Nitro5/nitro-5-2019-8.jpg" >
+                    </div>
+                </div>    
+                
+                 
+            </div>
+        </section>
+    
+        <footer  id="wrap-footer" >
+            <div class="container">
+                <div class="row" style="background-color: black; border-top: 1px solid springgreen;">
+                    <footer class="page-footer font-small stylish-color-dark pt-4" >
+                        <div class="container text-center text-md-left" >
+                            <div class="row">
+                                <div class="col-md-4 mx-auto">
+                                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">SAMURAI</h5>
+                                    <p> BUILD IT YOURSELF
+                                    chuyên máy tính PC, Laptop Gaming MSI, Asus & Acer chính hãng. Mang đến cho khách hàng giải pháp xây dựng máy tính hoàn chỉnh.</p>
+                                </div>
+                                <div class="col-md-4 mx-auto">
+                                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">HÀ NỘI</h5>
+                                    <p>Địa chỉ: 10A1 Ngõ 49, Linh Lang, Q. Ba Đình</p>
+                                    <p>Điện thoại: (028) 7108 1881 – Hotline: 097 232 1881</p>
+                                    <p> Phản ánh chất lượng dịch vụ: 093 183 4446 </p>
+                                    <p> Thời gian làm việc: 9AM – 8PM, Chủ nhật: 10AM – 7PM </p>  
+                                </div>
+                                <div class="col-md-4 mx-auto">
+                                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">TP. HỒ CHÍ MINH</h5>
+                                    <p>Địa chỉ: 73 Tự Cường, Phường 4, Q.Tân Bình</p>
+                                    <p>Điện thoại: (028) 7108 1881 – Hotline: 097 232 1881</p>
+                                    <p>Phản ánh chất lượng dịch vụ: 093 183 4446</p>
+                                    <p>Thời gian làm việc: 9AM – 8PM, Chủ nhật: 10AM – 7PM</p>  
+                                </div>
+                                <div class="col-md-12 mx-auto">
+                                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">CỘNG ĐỒNG SAMURAI</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#!">Facebook page</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">Youtube channel</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">SAMURAI group facebook</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                            <a href="https://samurai.com/"> samurai.com</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+      </footer>
+    </div>
+
+    <div id="DNModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+        
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">ĐĂNG NHẬP</h4>
+            </div>
+            <div class="modal-body">
+              <form class="horizontal-form" id="formDN">
+                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <label class="label-control col-xs-3 col-sm-3 col-md-3 col-lg-3 ">Name</label>
+                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                        <input type="text" placeholder="Name" class="form-control" onblur="KiemTraTen()" id="txtTen" />
+                        <span id="idE">(*)</span>
+                    </div>
+                </div>
+                <div class=" form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                    <label class="label-control col-xs-3 col-sm-3 col-md-3 col-lg-3 ">Mật Khẩu</label>
+                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                        <input type="password" placeholder="Mật khẩu" class="form-control" onblur="KiemTraMatKhaur()" id="txtMK" />
+                        <span id="idE">(*)</span>
+                    </div>
+                </div>   
+               
+              </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" >HỦY</button>
+                <button type="button" class="btn btn-info"  >ĐĂNG NHẬP</button> 
+            </div>
+          </div>
+      
+        </div>
+    </div>
+
+    <div id="TimModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+        
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">TÌM KIẾM</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 "></div>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 ">
+                    <input type="text" placeholder="tìm kiếm sản phẩm" class="form-control " id="idformTim"  style=" max-width: 100%;" />
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                    <input type="button" class="btn btn-danger"  onclick =  ""  value="Tìm" />
+                </div>
+                   
+            </div>
+            <div class="modal-footer">
+                <div>
+                    <h3 style="float: left;">kết quả tìm</h3>
+                </div>
+            </div>
+          </div>
+      
+        </div>
+    </div>
+
+
+
+</body>
+</html>
